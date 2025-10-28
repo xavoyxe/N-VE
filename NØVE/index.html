@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NØVE - Dein Portal für futuristische Techwear und minimalistische Eleganz.">
+    <meta name="keywords" content="NØVE, Techwear, Minimalismus, Futuristisches Design, Premium Mode">
+    <meta name="author" content="NØVE Team">
+    <title>NØVE - Entdecke das Universum der Mode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="loader" class="loader" aria-hidden="true">
+        <h1 class="logo">NØVE</h1>
+        <div class="cosmic-particles"></div>
+    </div>
+
+    <nav class="navbar" role="navigation" aria-label="Hauptmenü">
+        <ul>
+            <li><a href="index.html" aria-current="page"><i data-lucide="home"></i> Home</a></li>
+            <li><a href="shop.html"><i data-lucide="shopping-bag"></i> Shop</a></li>
+            <li><a href="cart.html"><i data-lucide="shopping-cart"></i> Warenkorb</a></li>
+            <li><a href="checkout.html"><i data-lucide="credit-card"></i> Checkout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="cosmic-bg"></div>
+            <h1 id="hero-title" class="logo scroll-reveal">NØVE</h1>
+            <p class="hero-subtitle scroll-reveal">Wo Visionen Form annehmen</p>
+            <p class="hero-text scroll-reveal">
+                Tauche ein in die Welt von NØVE – ein Universum aus futuristischer Techwear und 
+                minimalistischer Eleganz. Jedes Stück ist ein Statement, gefertigt für die Pioniere 
+                von morgen. Entdecke Mode, die deinen Puls beschleunigt.
+            </p>
+            <a href="shop.html" class="cta-button scroll-reveal"><i data-lucide="rocket"></i> Erkunde das Universum</a>
+        </section>
+
+        <section class="container collection" aria-labelledby="collection-title">
+            <h2 id="collection-title" class="scroll-reveal">Unsere Kollektion</h2>
+            <p class="section-text scroll-reveal">
+                Von wasserabweisenden Jacken bis zu präzisen Accessoires – unsere Kollektion vereint 
+                Innovation und Stil für deinen Alltag.
+            </p>
+            <div class="products-grid">
+                <div class="product-card scroll-reveal" data-product='{"id":"1","name":"Techwear Jacket","price":199,"image":"assets/placeholder.jpg","description":"Wasserabweisende Jacke mit futuristischem Design.","category":"jackets"}'>
+                    <img src="assets/placeholder.jpg" alt="Techwear Jacket" loading="lazy">
+                    <h3>Techwear Jacket</h3>
+                    <p>$199</p>
+                    <div class="product-actions">
+                        <button class="view-details" data-id="1" aria-label="Details zur Techwear Jacket anzeigen"><i data-lucide="eye"></i> Details</button>
+                        <button class="add-to-cart" aria-label="Techwear Jacket zum Warenkorb hinzufügen"><i data-lucide="shopping-cart"></i> In den Warenkorb</button>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal" data-product='{"id":"2","name":"Minimalist Watch","price":99,"image":"assets/placeholder.jpg","description":"Elegante Uhr mit minimalistischem Design.","category":"accessories"}'>
+                    <img src="assets/placeholder.jpg" alt="Minimalist Watch" loading="lazy">
+                    <h3>Minimalist Watch</h3>
+                    <p>$99</p>
+                    <div class="product-actions">
+                        <button class="view-details" data-id="2" aria-label="Details zur Minimalist Watch anzeigen"><i data-lucide="eye"></i> Details</button>
+                        <button class="add-to-cart" aria-label="Minimalist Watch zum Warenkorb hinzufügen"><i data-lucide="shopping-cart"></i> In den Warenkorb</button>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal" data-product='{"id":"3","name":"Urban Backpack","price":149,"image":"assets/placeholder.jpg","description":"Robuster Rucksack mit modularer Funktionalität.","category":"accessories"}'>
+                    <img src="assets/placeholder.jpg" alt="Urban Backpack" loading="lazy">
+                    <h3>Urban Backpack</h3>
+                    <p>$149</p>
+                    <div class="product-actions">
+                        <button class="view-details" data-id="3" aria-label="Details zum Urban Backpack anzeigen"><i data-lucide="eye"></i> Details</button>
+                        <button class="add-to-cart" aria-label="Urban Backpack zum Warenkorb hinzufügen"><i data-lucide="shopping-cart"></i> In den Warenkorb</button>
+                    </div>
+                </div>
+            </div>
+            <a href="shop.html" class="cta-button scroll-reveal"><i data-lucide="shopping-bag"></i> Gesamte Kollektion ansehen</a>
+        </section>
+
+        <section class="parallax-section scroll-reveal" aria-label="Warum NØVE">
+            <div class="parallax-bg"></div>
+            <h2>Warum NØVE?</h2>
+            <p>
+                Wir sind mehr als Mode. NØVE ist ein Lebensgefühl – eine Fusion aus Technologie, 
+                Nachhaltigkeit und zeitlosem Design. Jedes Produkt ist ein Schritt in eine Zukunft, 
+                in der Stil und Funktion eins werden.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card scroll-reveal">
+                    <i data-lucide="sparkles"></i>
+                    <h3>Innovatives Design</h3>
+                    <p>Futuristische Ästhetik, die deinen Look definiert.</p>
+                </div>
+                <div class="feature-card scroll-reveal">
+                    <i data-lucide="leaf"></i>
+                    <h3>Nachhaltigkeit</h3>
+                    <p>Umweltfreundliche Materialien für eine bessere Zukunft.</p>
+                </div>
+                <div class="feature-card scroll-reveal">
+                    <i data-lucide="zap"></i>
+                    <h3>Funktionalität</h3>
+                    <p>Praktische Details für den modernen Alltag.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container newsletter" aria-labelledby="newsletter-title">
+            <h2 id="newsletter-title" class="scroll-reveal">Tritt unserem Universum bei</h2>
+            <p class="section-text scroll-reveal">
+                Melde dich für unseren Newsletter an und bleibe immer einen Schritt voraus mit 
+                exklusiven Angeboten und Neuheiten.
+            </p>
+            <form class="newsletter-form scroll-reveal">
+                <div class="form-group">
+                    <label for="email"><i data-lucide="mail"></i> Deine Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="example@nove.com" required>
+                </div>
+                <button type="submit" class="cta-button" aria-label="Newsletter abonnieren"><i data-lucide="send"></i> Abonnieren</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer scroll-reveal" role="contentinfo">
+        <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i> Instagram</a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i> Twitter</a>
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i> Facebook</a>
+        </div>
+        <p>&copy; 2025 NØVE. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

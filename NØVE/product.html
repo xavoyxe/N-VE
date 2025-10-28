@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entdecke die Details unserer kosmischen Techwear- und Minimalismus-Produkte bei NØVE.">
+    <meta name="keywords" content="NØVE, Techwear, Minimalismus, Kosmisches Design, Produkt">
+    <meta name="author" content="NØVE Team">
+    <title>NØVE - Produkt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="loader" class="loader" aria-hidden="true">
+        <h1 class="logo">NØVE</h1>
+        <div class="cosmic-particles"></div>
+    </div>
+
+    <nav class="navbar" role="navigation" aria-label="Hauptmenü">
+        <ul>
+            <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+            <li><a href="shop.html"><i data-lucide="shopping-bag"></i> Shop</a></li>
+            <li><a href="cart.html"><i data-lucide="shopping-cart"></i> Warenkorb</a></li>
+            <li><a href="checkout.html"><i data-lucide="credit-card"></i> Checkout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero product-hero" aria-labelledby="product-title">
+            <div class="cosmic-bg"></div>
+            <h1 id="product-title" class="logo scroll-reveal">Produkt</h1>
+            <p class="hero-subtitle scroll-reveal">Ein Stück des Kosmos</p>
+            <p class="hero-text scroll-reveal">
+                Jedes Produkt von NØVE ist eine Fusion aus Stil und Innovation, bereit, deine Geschichte zu erzählen.
+            </p>
+            <a href="#product-content" class="cta-button scroll-reveal"><i data-lucide="eye"></i> Details erkunden</a>
+        </section>
+
+        <section id="product-content" class="container product-detail scroll-reveal" aria-labelledby="product-name">
+            <div class="product-image">
+                <img id="product-img" src="" alt="Produkt" loading="lazy">
+            </div>
+            <div class="product-info">
+                <h1 id="product-name"></h1>
+                <p id="product-price" class="product-price"></p>
+                <p id="product-desc" class="product-desc"></p>
+                <div class="product-options">
+                    <div class="form-group">
+                        <label for="size"><i data-lucide="ruler"></i> Größe wählen</label>
+                        <select id="size" class="form-input" aria-label="Größe auswählen">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="color"><i data-lucide="palette"></i> Farbe wählen</label>
+                        <select id="color" class="form-input" aria-label="Farbe auswählen">
+                            <option value="black">Schwarz</option>
+                            <option value="grey">Grau</option>
+                            <option value="white">Weiß</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="add-to-cart cta-button" aria-label="Produkt zum Warenkorb hinzufügen"><i data-lucide="shopping-cart"></i> In den Warenkorb</button>
+                <div class="product-features">
+                    <h3>Produktmerkmale</h3>
+                    <ul>
+                        <li><i data-lucide="sparkles"></i> Hochwertige, langlebige Materialien</li>
+                        <li><i data-lucide="zap"></i> Futuristisches, minimalistisches Design</li>
+                        <li><i data-lucide="leaf"></i> Nachhaltige und umweltfreundliche Produktion</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer scroll-reveal" role="contentinfo">
+        <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i> Instagram</a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i> Twitter</a>
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i> Facebook</a>
+        </div>
+        <p>&copy; 2025 NØVE. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
