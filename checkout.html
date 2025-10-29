@@ -1,95 +1,47 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sicherer Checkout bei NØVE – Schließe deine kosmische Reise mit Stil ab.">
-    <meta name="keywords" content="NØVE, Checkout, Techwear, Minimalismus, Kosmisches Design">
-    <meta name="author" content="NØVE Team">
-    <title>NØVE - Checkout</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Checkout – NØVE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="loader" class="loader" aria-hidden="true">
-        <h1 class="logo">NØVE</h1>
-        <div class="cosmic-particles"></div>
-    </div>
+<div id="loader" class="loader"><div class="logo">NØVE</div></div>
 
-    <nav class="navbar" role="navigation" aria-label="Hauptmenü">
-        <ul>
-            <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
-            <li><a href="shop.html"><i data-lucide="shopping-bag"></i> Shop</a></li>
-            <li><a href="cart.html"><i data-lucide="shopping-cart"></i> Warenkorb</a></li>
-            <li><a href="checkout.html" aria-current="page"><i data-lucide="credit-card"></i> Checkout</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="hero checkout-hero" aria-labelledby="checkout-title">
-            <div class="cosmic-bg"></div>
-            <h1 id="checkout-title" class="logo scroll-reveal">Checkout</h1>
-            <p class="hero-subtitle scroll-reveal">Dein Stil, ein letzter Schritt</p>
-            <p class="hero-text scroll-reveal">
-                Nur noch ein Moment trennt dich von deinem neuen Lieblingsstück. Schließe deine Reise ab und bring deinen Stil ins Universum.
-            </p>
-            <a href="#checkout-content" class="cta-button scroll-reveal"><i data-lucide="rocket"></i> Zum Checkout</a>
-        </section>
-
-        <section id="checkout-content" class="container checkout" aria-labelledby="checkout-content-title">
-            <h2 id="checkout-content-title" class="scroll-reveal">Abschließen</h2>
-            <p class="section-text scroll-reveal">
-                Fülle die Details aus und werde Teil des NØVE-Kosmos.
-            </p>
-            <div class="checkout-progress scroll-reveal">
-                <div class="progress-step active"><i data-lucide="user"></i> Informationen</div>
-                <div class="progress-step"><i data-lucide="credit-card"></i> Zahlung</div>
-                <div class="progress-step"><i data-lucide="check-circle"></i> Bestätigung</div>
-            </div>
-            <div class="checkout-content">
-                <form id="checkout-form" class="scroll-reveal">
-                    <div class="form-group">
-                        <label for="name"><i data-lucide="user"></i> Name</label>
-                        <input type="text" id="name" class="form-input" placeholder="Dein Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email"><i data-lucide="mail"></i> Email</label>
-                        <input type="email" id="email" class="form-input" placeholder="example@nove.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address"><i data-lucide="map-pin"></i> Adresse</label>
-                        <input type="text" id="address" class="form-input" placeholder="Deine Adresse" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="payment"><i data-lucide="credit-card"></i> Zahlungsmethode</label>
-                        <select id="payment" class="form-input" aria-label="Zahlungsmethode auswählen">
-                            <option value="credit">Kreditkarte</option>
-                            <option value="paypal">PayPal</option>
-                            <option value="klarna">Klarna</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="cta-button" aria-label="Zahlung abschließen"><i data-lucide="rocket"></i> Jetzt bezahlen</button>
-                </form>
-                <div class="order-summary scroll-reveal">
-                    <h3>Bestellübersicht</h3>
-                    <div id="order-items"></div>
-                    <p class="order-total">Gesamt: <span id="order-total">0</span> $</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer scroll-reveal" role="contentinfo">
-        <div class="footer-socials">
-            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i> Instagram</a>
-            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i> Twitter</a>
-            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i> Facebook</a>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">NØVE</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html" class="cart-link">Warenkorb <span id="cart-count">0</span></a>
         </div>
-        <p>&copy; 2025 NØVE. Alle Rechte vorbehalten.</p>
-    </footer>
+    </div>
+</nav>
 
-    <script src="script.js"></script>
-    <script>lucide.createIcons();</script>
+<section class="section">
+    <h2>Checkout</h2>
+    <form class="checkout-form">
+        <input type="email" placeholder="E-Mail" required />
+        <div class="row">
+            <input type="text" placeholder="Vorname" required />
+            <input type="text" placeholder="Nachname" required />
+        </div>
+        <input type="text" placeholder="Adresse" required />
+        <button type="submit" class="btn full">Zahlungspflichtig bestellen</button>
+    </form>
+    <a href="cart.html" class="btn-outline mt-4">← Zurück</a>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="logo">NØVE</div>
+        <p>© 2025 NØVE</p>
+    </div>
+</footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>
