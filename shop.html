@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!证券html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,19 @@
         <div class="cosmic-particles"></div>
     </div>
 
+    <div class="navbar-overlay"></div>
     <nav class="navbar" role="navigation" aria-label="Hauptmenü">
+        <button class="navbar-toggle" aria-label="Menü öffnen/schließen" aria-expanded="false" aria-controls="navbar-menu">
+            <i data-lucide="menu"></i>
+        </button>
+        <div class="navbar-menu" id="navbar-menu" aria-hidden="true">
+            <ul>
+                <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+                <li><a href="shop.html" aria-current="page"><i data-lucide="shopping-bag"></i> Shop</a></li>
+                <li><a href="cart.html"><i data-lucide="shopping-cart"></i> Warenkorb</a></li>
+                <li><a href="checkout.html"><i data-lucide="credit-card"></i> Checkout</a></li>
+            </ul>
+        </div>
         <ul>
             <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
             <li><a href="shop.html" aria-current="page"><i data-lucide="shopping-bag"></i> Shop</a></li>
@@ -103,6 +115,21 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+        const toggle = document.querySelector('.navbar-toggle');
+        const menu = document.querySelector('.navbar-menu');
+        const overlay = document.querySelector('.navbar-overlay');
+        toggle.addEventListener('click', () => {
+            const isOpen = !menu.classList.contains('open');
+            menu.classList.toggle('open', isOpen);
+            overlay.classList.toggle('open', isOpen);
+            document.body.classList.toggle('no-scroll', isOpen);
+            toggle.setAttribute('aria-expanded', isOpen);
+            menu.setAttribute('aria-hidden', !isOpen);
+            toggle.querySelector('i').setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+            lucide.createIcons();
+        });
+    </script>
 </body>
 </html>
